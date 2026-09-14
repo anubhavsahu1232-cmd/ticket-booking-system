@@ -91,14 +91,7 @@ public class SecurityConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOrigins(
-                List.of(
-                        "http://localhost:3000",
-                        "http://localhost:5173",
-                        "https://ticket-booking-system-vercel.vercel.app",
-                        "https://ticket-booking-system-vercel-8251dzxkd-single-159e.vercel.app"
-                )
-        );
+        configuration.setAllowedOrigins(List.of("http://localhost:3000", "http://localhost:5173", "https://ticket-booking-system-vercel.vercel.app", "https://ticket-booking-system-vercel-8251dzxkd-single-159e.vercel.app", "https://ticket-booking-system-vercel-8z51dzxkd-single-159e.vercel.app"));
 
         configuration.setAllowedMethods(
                 List.of(
