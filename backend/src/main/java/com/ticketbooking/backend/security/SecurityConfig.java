@@ -1,4 +1,4 @@
-﻿package com.ticketbooking.backend.security;
+package com.ticketbooking.backend.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
