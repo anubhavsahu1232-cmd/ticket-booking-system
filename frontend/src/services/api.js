@@ -1,7 +1,14 @@
 import axios from "axios";
 
+// Use local backend while running the frontend locally.
+// Use Render backend when the frontend is deployed.
+const API_BASE_URL = window.location.hostname === "localhost"
+    ? "http://localhost:8080/api"
+    : "https://ticket-booking-system-7652.onrender.com/api";
+
 const api = axios.create({
-    baseURL: "https://ticket-booking-system-7652.onrender.com/api",
+    baseURL: API_BASE_URL,
+    timeout: 30000,
     headers: {
         "Content-Type": "application/json",
     },
