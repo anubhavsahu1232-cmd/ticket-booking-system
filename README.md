@@ -1,164 +1,109 @@
-\# 🎟️ Ticket Booking System
-
-
-
-A full-stack web application for booking movie and live event tickets with secure authentication, seat selection, online payment simulation, and digital ticket generation.
-
-
-
-\## 🚀 Features
-
-
-
-\### 👤 User Features
-
-\- User Registration and Login
-
-\- JWT-based Authentication
-
-\- Browse Movies and Events
-
-\- View Event Details
-
-\- View Available Shows
-
-\- Interactive Seat Selection
-
-\- Book Multiple Seats
-
-\- Payment Processing
-
-\- Booking History
-
-\- Cancel Booking
-
-\- Digital Ticket Generation
-
-\- QR Code Ticket
-
-
-
-\### 🛡️ Admin Features
-
-\- Admin Authentication
-
-\- Admin Dashboard
-
-\- Manage Events
-
-\- Manage Venues
-
-\- Manage Shows
-
-\- View All Bookings
-
-\- View Booking Details
-
-
-
-\## 🛠️ Technologies Used
-
-
-
-\### Backend
-
-\- Java
-
-\- Spring Boot
-
-\- Spring Security
-
-\- JWT Authentication
-
-\- Spring Data JPA
-
-\- Hibernate
-
-\- MySQL
-
-\- REST APIs
-
-\- Maven
-
-
-
-\### Frontend
-
-\- React.js
-
-\- JavaScript
-
-\- React Router
-
-\- Axios
-
-\- HTML5
-
-\- CSS3
-
-\- Vite
-
-
-
-\### Database
-
-\- MySQL
-
-
-
-\## 🏗️ Project Structure
-
-
+# 🎟️ Ticket Booking System
+
+A full-stack ticket booking platform for movies and live events, built with **Java, Spring Boot, React, and MySQL**.
+
+## ✨ Highlights
+
+- 🔐 JWT-based authentication and authorization
+- 🎬 Browse movies and live events
+- 💺 Interactive seat selection
+- 🎫 Multi-seat booking and booking history
+- 💳 Payment processing simulation
+- ❌ Booking cancellation
+- 📱 Digital tickets with QR codes
+- 🛡️ Admin dashboard for events, venues, shows, and bookings
+- 🌐 REST APIs connecting React with Spring Boot
+
+## 🧰 Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Backend | Java, Spring Boot, Spring Security, Spring Data JPA, Hibernate |
+| Authentication | JWT |
+| Frontend | React, JavaScript, React Router, Axios, Vite |
+| Database | MySQL |
+| Build Tool | Maven |
+| API Style | REST |
+
+## 🏗️ Architecture
 
 ```text
+React Frontend
+      │ REST API / JSON
+      ▼
+Spring Boot Backend
+      │
+      ├── Spring Security + JWT
+      ├── REST Controllers
+      ├── Service Layer
+      └── Spring Data JPA
+              │
+              ▼
+            MySQL
+```
 
+## 📁 Project Structure
+
+```text
 ticket-booking-system/
-
-│
-
-├── backend/
-
-│   └── Spring Boot Application
-
-│
-
-├── frontend/
-
-│   └── React Application
-
-│
-
+├── backend/       # Spring Boot application
+├── frontend/      # React application
 └── README.md
+```
 
+## 🚀 Getting Started
 
+```bash
+git clone https://github.com/anubhavsahu1232-cmd/ticket-booking-system.git
+cd ticket-booking-system
+```
 
+Configure your MySQL connection and required environment variables, then:
 
+```bash
+cd backend
+mvn spring-boot:run
+```
 
-👨‍💻 Author
+In another terminal:
 
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
+> Never commit database passwords, JWT secrets, API keys, or other credentials.
 
-Anubhav Sahu
+## 🌐 Live Demo
 
+**Frontend:** https://ticket-booking-system-vercel-8z51dzxkd-single-159e.vercel.app/
 
+> The deployed application may depend on the availability of its backend and database services.
 
-MCA Student
+## 📌 What I Learned
 
-Java | Spring Boot | React | MySQL | REST APIs
+- REST API development with Spring Boot
+- JWT authentication and protected routes
+- React-to-backend API integration
+- JPA/Hibernate with MySQL
+- Booking and seat-selection workflows
+- Admin workflows
+- Full-stack deployment
 
+## 🔮 Future Improvements
 
+- Real payment gateway integration
+- Email booking notifications
+- Advanced search and filtering
+- Automated testing and CI/CD
+- Production monitoring
 
-📌 Project Type
+## 👨‍💻 Author
 
+**Anubhav Sahu**  
+MCA Student | Java | Spring Boot | React | MySQL
 
+## 📄 License
 
-Full Stack Web Application
-
-Live Demo Link: https://ticket-booking-system-vercel-8z51dzxkd-single-159e.vercel.app?_vercel_share=HpiTCTjBZi5lbwAN2kTvd14U6nMDXkFh
-
-📄 License
-
-
-
-This project is created for educational and portfolio purposes.
-
+Educational and portfolio project.
