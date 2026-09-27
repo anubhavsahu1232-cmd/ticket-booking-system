@@ -79,6 +79,8 @@ npm run dev
 
 **Frontend:** https://ticket-booking-system-vercel-8z51dzxkd-single-159e.vercel.app/
 
+[![🚀 LIVE DEMO](https://img.shields.io/badge/🚀%20LIVE%20DEMO-2563EB?style=for-the-badge)](https://ticket-booking-system-vercel-8z51dzxkd-single-159e.vercel.app/)
+
 > The deployed application may depend on the availability of its backend and database services.
 
 ## 📌 What I Learned
